@@ -20,7 +20,6 @@ bookmarksRouter
       }
     }
     const { title, url, description, rating } = req.body
-    console.log(rating)
 
     if (!Number(rating) || rating < 0 || rating > 5) {
       logger.error(`Invalid rating '${rating}' supplied`)
